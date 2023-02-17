@@ -41,7 +41,8 @@ module.exports = openAI
 
 K. Now let's start coding
 ```js
-try {
+async function openAI(prompt, interaction) {
+    try {
         const response = await openai.createCompletion({
             model: "text-davinci-003",
             prompt: prompt,
